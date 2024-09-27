@@ -1,0 +1,21 @@
+{% load static tailwind_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="{% static "images/oi-logo.png" %}">
+    <title>CAPEX App</title>
+
+
+   {% tailwind_css %}
+</head>
+<body class="bg-[#e2e3e5]">
+
+
+{% include "widgets/navbar.html" %}
+
+{% block base %}
+
+{% endblock base %}
+{% include "widgets/footer.html" %}
+</body>
