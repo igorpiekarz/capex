@@ -1,17 +1,30 @@
 {% extends "base/base.html" %}
 
 {% block base %}
-{% include "widgets/return_button.html" %}
-<form class="flex items-center space-x-6">
-    <label class="block">
-      <input type="file" class="block w-full text-sm text-slate-500
-        file:mr-4 file:py-2 file:px-4
-        file:rounded-full file:border-0
-        file:text-sm file:font-semibold
-        file:bg-violet-50 file:text-violet-700
-        hover:file:bg-violet-100
+
+<div class="flex justify-center m-[3%]">
+  <div class="flex flex-wrap justify-center">
+    <div class="rounded-xl bg-[#f3f4f7] block shadow-md">
+
+      {% include "widgets/return_button.html" %}
+
+      <h1 class="text-xl text-center py-4">Change of Allocation</h1>
+
+      <input type="file" class="text-sm text-grey-500
+        py-5 px-5
+        file:mr-5 file:py-2 file:px-6
+        file:rounded-xl file:border-0
+        file:text-sm file:font-medium
+        file:bg-yellow-500 file:text-black
+        hover:file:cursor-pointer hover:file:bg-yellow-400
       "/>
-    </label>
-</form>
+      <br>
+      <button class="h-10 w-16  m-5  text-black text-sm font-medium bg-yellow-500 rounded-xl shadow-mdtransition ease-in-out duration-150 hover:shadow-2xl hover:bg-yellow-400 ">
+        Upload
+      </button>
+    </div>
+  </div>
+</div>
+
 {% endblock base %}
 

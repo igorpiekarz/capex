@@ -2,18 +2,30 @@
 
 {% block base %}
 
-    <div class="grid grid-rows-3 grid-flow-col gap-4">
-        <div class="row-span-3 justify-center items-center">    
-            {% include "widgets/return_button.html" %}
-        </div>
-        <div class="col-span-2">
-            <input type="file" />
-        </div>
-        <div class="row-span-2 col-span-2">
-            <a>Upload</a>
-        </div>
-      </div>
+<div class="flex justify-center m-[3%]">
+    <div class="flex flex-wrap justify-center">
+      <div class="rounded-xl bg-[#f3f4f7] block shadow-md">
+  
+        {% include "widgets/return_button.html" %}
+  
+        <h1 class="text-xl text-center py-4">Manual Adjustemnts</h1>
 
+        <input type="file" class="text-sm text-grey-500
+          py-5 px-5
+          file:mr-5 file:py-2 file:px-6
+          file:rounded-xl file:border-0
+          file:text-sm file:font-medium
+          file:bg-yellow-500 file:text-black
+          hover:file:cursor-pointer hover:file:bg-yellow-400
+        "/>
+        <br>
+        <button class="h-10 w-16  m-5  text-black text-sm font-medium bg-yellow-500 rounded-xl shadow-mdtransition ease-in-out duration-150 hover:shadow-2xl hover:bg-yellow-400 ">
+          Upload
+        </button>
+      </div>
+    </div>
+  </div>
+  
 
 {% endblock base %}
 
