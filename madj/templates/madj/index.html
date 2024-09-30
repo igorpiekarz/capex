@@ -4,29 +4,31 @@
 
 <div class="flex justify-center m-[3%]">
     <div class="flex flex-wrap justify-center">
-      <div class="rounded-xl bg-[#f3f4f7] block shadow-md">
+      <div class="rounded-xl bg-[#f3f4f7] block shadow-md w-128">
   
-        {% include "widgets/return_button.html" %}
-  
-        <h1 class="text-xl text-center py-4">Manual Adjustemnts</h1>
+        <div class="items-center justify-center">
+          <div class="w-1/5"> 
+          {% include "widgets/return_button.html" %}
+          </div>
+          <h1 class="pr-10 pt-2 mb-5 justify-center items-center font-semibold text-xl text-center">Manual Adjustments</h1>
+        </div>
 
         <input type="file" class="text-sm text-grey-500
-        py-5 px-5
+        py-5 px-5 w-full
         file:mr-5 file:py-2 file:px-6
         file:rounded-xl file:border-0
         file:text-sm file:font-medium
         file:bg-yellow-500 file:text-black
         hover:file:cursor-pointer hover:file:bg-yellow-400
         hover:file:shadow-2xl
-        file:transition ease-in-out duration-150"/>
-        <br>
-        <button class="h-10 w-16  m-5 text-black text-sm font-medium bg-yellow-500 rounded-xl shadow-md transition ease-in-out duration-150 hover:shadow-2xl hover:bg-yellow-400 ">
+        file:transition ease-in-out duration-150 mb-5"/>
+        <button class="h-10 w-full text-black text-sm font-medium bg-yellow-500 rounded-b-xl shadow-md transition ease-in-out duration-150 hover:shadow-2xl hover:bg-yellow-400 active:bg-yellow-200 ">
           Upload
         </button>
       </div>
     </div>
   </div>
-  
+
 
 {% endblock base %}
 
