@@ -834,6 +834,14 @@ select {
   height: auto;
 }
 
+.h-\[256px\] {
+  height: 256px;
+}
+
+.min-h-\[256px\] {
+  min-height: 256px;
+}
+
 .w-1\/5 {
   width: 20%;
 }
@@ -860,6 +868,14 @@ select {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -943,8 +959,16 @@ select {
   padding-top: 0.5rem;
 }
 
+.pr-12 {
+  padding-right: 3rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-sm {
