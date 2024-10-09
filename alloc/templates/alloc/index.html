@@ -11,11 +11,11 @@
         </div>
 
         <div class="flex items-center justify-center">
-        <h1 class="pt-2 mb-5  font-semibold text-xl c">Change of Allocation</h1>
+        <h1 class="pt-2 mb-5  font-semibold text-xl select-none">Change of Allocation</h1>
         </div>
         <div>
-          <select class="block rounded-xl ml-5 w-64">
-            <option value="" disabled selected hidden>Country group</option>
+          <select class="block rounded-xl ml-5 w-64 hover:shadow-lg border-slate-300 transition ease-in-out duration-150 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 cursor-pointer">
+            <option value="" disabled selected hidden>CG</option>
             <option value="AMA"> AMA </option>
             <option value="AMC"> AMC </option>
             <option value="AMA"> AMN </option>
@@ -27,9 +27,10 @@
             <option value="KE"> KE   </option>
           </select>
         </div>
+        <p class="flex items-center justify-center mt-1 -mb-3 text-xs text-slate-500">Select country group for upload</p>
         <br>
         <div>
-          <select class="block rounded-xl ml-5 w-64">
+          <select class="block rounded-xl ml-5 w-64 hover:shadow-lg border-slate-300 transition ease-in-out duration-150 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 cursor-pointer">
             <option value="" disabled selected hidden>Template</option>
             <option value="AAP1B">AAP1B</option>
             <option value="AAP1Qx4">AAP1Q x4</option>
@@ -47,9 +48,9 @@
               <option value="AAP2">AAP2</option>
               <option value="SABL">Strategic ABL</option>
               </optgroup>
-
           </select>
         </div>
+        <p class="flex items-center justify-center mt-1 text-xs text-slate-500">Select template for upload</p>
         <div>
         <input type="file" class="text-sm text-grey-500
         py-5 px-5 w-full

@@ -11,17 +11,18 @@
         </div>
 
         <div class="flex items-center justify-center">
-        <h1 class="pt-2 mb-5  font-semibold text-xl">PSR</h1>
+        <h1 class="pt-2 mb-5  font-semibold text-xl select-none">PSR</h1>
         </div>
 
         <div>
-          <select class="block rounded-xl ml-5 w-64">
-            <option value="" disabled selected hidden>Select file type</option>
+          <select class="block rounded-xl ml-5 w-64 hover:shadow-lg border-slate-300 transition ease-in-out duration-150 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 cursor-pointer">
+            <option value="" disabled selected hidden>File type</option>
             <option value="sub">Substitution</option>
             <option value="dis">Distribution</option>
             <option value="aar">AAR</option>
           </select>
         </div>
+        <p class="flex items-center justify-center mt-1 text-xs text-slate-500">Select file type for upload</p>
 
         <div>
         <input type="file" class="text-sm text-grey-500
